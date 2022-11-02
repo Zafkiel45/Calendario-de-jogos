@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121214;
+  background-image: url(./Assets/bg.svg);
+  background-position-x: center;
+  background-position-y: 55.6%;
+  background-repeat: no-repeat;
+}
+
+.cabecalho {
+  margin-bottom: 63px;
+}
+
+#app {
+  border: 1px solid red;
+  width: fit-content; /* largura se encaxa de acordo com o conteúdo ;-; */
+  margin: 52px auto;
+}

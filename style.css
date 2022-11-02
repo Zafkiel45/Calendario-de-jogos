@@ -17,7 +17,65 @@ body {
 }
 
 #app {
-  border: 1px solid red;
   width: fit-content; /* largura se encaxa de acordo com o conteúdo ;-; */
   margin: 52px auto;
+}
+
+header {
+  margin-bottom: 63px;
+}
+
+.card {
+    background-color: #1d1c19;
+    border-bottom: 2px solid #f7dd43;
+    border-radius: 6px;
+    color: white;
+    padding: 32px 23px;
+    text-align: center;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: 1px solid #746615;
+  border-radius: 6px;
+  gap: 16px;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 53px;
+  color: #f7dd43;
+}
+
+span {
+  margin: 0px 2px;
+  color: #e1e1e6;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.lista-1 {
+    list-style: none;
+    width: 270px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+strong {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 125%;
+  color: #E1E1E6;
+}
+
+hr {
+  height: 1px;
+  margin: 24px 0px;
+  border-color: #323238;
 }

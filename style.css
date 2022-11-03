@@ -14,6 +14,7 @@ body {
 
 .cabecalho {
   margin-bottom: 63px;
+  text-align: center;
 }
 
 #app {
@@ -78,4 +79,10 @@ hr {
   height: 1px;
   margin: 24px 0px;
   border-color: #323238;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }

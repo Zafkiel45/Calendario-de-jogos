@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+
+/* código 70%, softskill 20% (marca pessoal), marketing pessoal 10% */
+
+:root {
+  --card-color: #f7dd43;
+}
+
 body {
   background-color: #121214;
   background-image: url(./Assets/bg.svg);
@@ -107,17 +114,8 @@ main {
 
 .card {
   opacity: 0;
-  animation: appear 0.2s forwards;
+  animation: appear 3s forwards;
 }
-
-.card:nth-child(1){
-  animation-delay: 1s;
-}
-
-.card:nth-child(2){
-  animation-delay: 2s;
-}
-
 
 @keyframes appear {
   0%{
@@ -129,4 +127,11 @@ main {
   }
 }
 
-
+@media (min-width: 700px){
+  .container {
+    display: flex;
+    max-width: 670px;
+    flex-direction: row;
+    flex-wrap: wrap ;
+  }
+}

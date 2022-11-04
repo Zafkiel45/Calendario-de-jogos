@@ -21,25 +21,12 @@ function carta(date, day, games){
   `
 }
 
-
-
-document.querySelector("#app").innerHTML = `
-<div class="container">
-            <header class="cabecalho">
-                <h1>
-                    <img src="Assets/logo.svg" alt="logo">
-                </h1>
-            </header>
-            <main>
-            ${carta(
-            '24/11' , 
-            'quinta',
+document.querySelector(".container").innerHTML = 
+              carta('24/11' , 'quinta',
               CreateGames('brasil' , '16:00' , 'servia') + 
               CreateGames('hungria' , '13:00' , 'argentina') +
               CreateGames('colombia' , '20:00' , 'japão')
-            )}
-            ${carta('28/11' , "segunda")}
-
-            </main>
-        </div>
-`
+            ) +
+              carta('28/11' , "segunda" ,
+              CreateGames('brasil' , '16:00' , 'servia')
+            )

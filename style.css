@@ -1,16 +1,20 @@
+/*Abaixo são os resets padrão do HTML. É de extrema importância ter essa parâmetros em todo documento CSS*/
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-
 /* código 70%, softskill 20% (marca pessoal), marketing pessoal 10% */
 
+/*Abaixo é um seletor da raiz, e no root armazenamos variáveis que podem ser usadas ao longo da produção diversas vezes, é necessário colocar dois traços --nome-outro nome se quiser: valor*/
 :root {
   --card-color: #f7dd43;
 }
 
+
+/* Parâmetros básico para o fundo do corpo da página*/
 body {
   background-color: #121214;
   background-image: url(./Assets/bg.svg);
@@ -44,13 +48,13 @@ header {
 
 h2 {
   display: flex;
-  align-items: center;
+  align-items: center; /*Alinha os elementos no meio de uma linha imaginário horizontal*/
   justify-content: center;
   padding: 8px 16px;
   border: 1px solid #746615;
   border-radius: 6px;
-  gap: 16px;
-  width: fit-content;
+  gap: 16px; /*Espaço entre elementos flexivéis*/
+  width: fit-content; /*A largura do elemento se ajusta conforme o conteúdo dentro do elemento*/
   margin: auto;
   margin-bottom: 53px;
   color: #f7dd43;
@@ -59,7 +63,7 @@ h2 {
 span {
   margin: 0px 2px;
   color: #e1e1e6;
-  text-transform: uppercase;
+  text-transform: uppercase; /*Tranforma todo o texto em letras maiúsculas*/
   font-size: 14px;
 }
 
@@ -103,20 +107,22 @@ main {
 .card h2:hover ,
 .card ul li strong:hover,
 .card ul img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /*Ao passar o mouse por cima o elemento aumenta sua escala em 1.1*/
 }
 
 .card h2,
 .card ul li strong,
 .card ul img{
-  transition: transform 0.3s;
+  transition: transform 0.3s; /*O aumento da escola se torna mais natural*/
 }
 
 .card {
   opacity: 0;
-  animation: appear 3s forwards;
+  animation: appear 3s forwards; /*Chama a animação "appear" e declaramos o tempo em que ela será executanda. o forwards serve para manter os parâmetros da regra keyframe*/
 }
 
+
+/*Declara uma regra de animação, sendo nomeada como appear, mas pode ser qualquer outro nome. Dentro da regra colocamos o que queremos que aconteça quando a animação for chamada. */
 @keyframes appear {
   0%{
     opacity: 0;
@@ -126,6 +132,9 @@ main {
     opacity: 1; 
   }
 }
+
+/*Media Querie utilizada para aplicar quando uma resolução for menor ou maior que a especificada.*/
+
 
 @media (min-width: 700px){
   .container {
